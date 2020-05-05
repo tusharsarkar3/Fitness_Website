@@ -1,0 +1,228 @@
+{% extends "base.html"%}
+{% block link%}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/style1.css')}}" >
+{% endblock%}
+{% block content%}
+<p>ROUTINE</p>
+<table border="1" class="table">
+    <tbody>
+        <tr>
+            <th>DAYS</th>
+            <th>MUSCLE GROUPS</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Chest Shoulder</td>
+        </tr>
+         <tr>
+            <td>Tuesday</td>
+            <td>Cardio</td>
+        </tr>
+         <tr>
+            <td>Wednesday</td>
+            <td>Arms and Back</td>
+        </tr>
+         <tr>
+            <td>Thursday</td>
+            <td>Rest</td>
+        </tr>
+         <tr>
+            <td>Friday</td>
+            <td>Legs</td>
+        </tr>
+         <tr>
+            <td>Saturday</td>
+            <td>Core</td>
+        </tr>
+         <tr>
+            <td>Sunday</td>
+            <td>Rest</td>
+        </tr>
+    </tbody>
+</table>
+<p>CHEST</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of sets</th>
+            <th>Repetitions per set</th>
+        </tr>
+        <tr>
+            <td>Push ups</td>
+            <td>3</td>
+            <td>15-20</td>
+        </tr>
+         <tr>
+            <td>Flat bench press</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+          <tr>
+            <td>Incline bench press</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+         <tr>
+            <td>Dips</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+    </tbody>
+</table>
+<p>SHOULDER</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of sets</th>
+            <th>Repetitions per set</th>
+        </tr>
+        <tr>
+            <td>DB shoulder press</td>
+            <td>3</td>
+            <td>15-20</td>
+        </tr>
+         <tr>
+            <td>DB side raises</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+          <tr>
+            <td>DB front raises</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+    </tbody>
+</table>
+<p>HIIT Cardio</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of minutes</th>
+
+        </tr>
+        <tr>
+            <td>Treadmill</td>
+            <td>30 mins</td>
+        </tr>
+
+    </tbody>
+</table>
+<p>ARMS</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of sets</th>
+            <th>Repetitions per set</th>
+        </tr>
+        <tr>
+            <td>DB curls</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+         <tr>
+            <td>Hammer curls</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+          <tr>
+            <td>Tricep pushdown</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+         <tr>
+            <td>DB kickback</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+    </tbody>
+</table>
+<p>BACK</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of sets</th>
+            <th>Repetitions per set</th>
+        </tr>
+        <tr>
+            <td>Lat pull downs</td>
+            <td>3</td>
+            <td>10 -12</td>
+        </tr>
+         <tr>
+            <td>Seated rows</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+          <tr>
+            <td>Pull ups</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+         <tr>
+            <td>Shrugs</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+    </tbody>
+</table>
+<p>LEGS</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of sets</th>
+            <th>Repetitions per set</th>
+        </tr>
+        <tr>
+            <td>Squats</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+         <tr>
+            <td>Lunges</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+          <tr>
+            <td>Leg extension</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+         <tr>
+            <td>Calf raises</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+    </tbody>
+</table>
+<p>CORE</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Exercise</th>
+            <th>No of sets</th>
+            <th>Repetitions per set</th>
+        </tr>
+        <tr>
+            <td>Leg raises</td>
+            <td>3</td>
+            <td>15-20</td>
+        </tr>
+         <tr>
+            <td>Planck</td>
+            <td>3</td>
+            <td>30 secs</td>
+        </tr>
+          <tr>
+            <td>Crunches</td>
+            <td>3</td>
+            <td>10-12</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock%}

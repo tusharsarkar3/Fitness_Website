@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+{% block link%}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/style2.css')}}">
+{%endblock%}
+{% block content%}
+<p id="one">
+    <b>
+        Workout routines
+    </b>
+</p>
+<div class="two">
+    <a href="/gym/beginner">
+    <img src="{{ url_for('static',filename='images/Beginner.jpg')}}" height="150" width="320">
+      <p>
+        <h1> Beginner</h1>
+    You're pretty new to exercise in general or have been out of shape for 6 months or more. You're not exactly comfortable in the gym environment and are not quite sure where to start. You don’t participate in a regular or structured exercise program, if you do it’s of a low activity level, like taking the girlfriend shopping or walking to the pub!</p>
+    </a>
+</div>
+<div class="third">
+    <a href="/gym/inter">
+    <img src="{{ url_for('static',filename='images/Intermediate.jpg')}}" height="150" width="320">
+      <p>
+        <h1> Interemdiate</h1>
+ You regularly participate in some form of light to moderate exercise, at least 2 to 3 times a week. You’re used to raising your heart rate on a regular basis and performing all sorts of movements like lifting, twisting and stretching. When it comes to the gym, you know what you know and rarely change your routine. You play it safe and stick to the machines and never venture into the free weights area through fear of intimidation.
+    </p></a>
+</div>
+<div class="fourth">
+    <a href="/gym/advanced">
+    <img src="{{ url_for('static',filename='images/Advanced.jpg')}}" height="150" width="320">
+      <p>
+        <h1>Advanced</h1>You're a regular gym goer and are committed to the cause, working out at least 3 times a week. You’ll give anything a go in the hunt for that perfect workout that will give you the results you’ve been looking for. You might have tried the latest workouts from Men’s Health and Men’s Fitness, but haven’t committed long enough to see any results. You're looking for new exciting workouts that will keep you on your toes and push your fitness to new levels.
+    </p>
+    </a>
+</div>
+
+
+
+
+{% endblock%}

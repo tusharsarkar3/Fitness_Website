@@ -1,0 +1,47 @@
+{% extends "base.html"%}
+{% block link%}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/style2.css')}}">
+{%endblock%}
+{% block content%}
+<p id="one">
+    <b>
+        Home Workout routine
+    </b>
+</p>
+<div class="two">
+    <img src="{{ url_for('static',filename='images/pushups.jpg')}}" height="75" width="320">
+      <p>
+        <h1> Push ups</h1>
+        <a href="https://www.youtube.com/watch?v=Zi6c09DRGxk">Click here to check form</a>
+      </p>
+</div>
+<div class="third">
+    <img src="{{ url_for('static',filename='images/burpees.jpg')}}" height="75" width="320">
+      <p>
+        <h1>BURPEES</h1>
+         <a href="https://www.youtube.com/watch?v=dZgVxmf6jkA">Click here to check form</a>
+    </p>
+</div>
+<div class="fourth">
+    <img src="{{ url_for('static',filename='images/squats.jpg')}}" height="75" width="320">
+      <p>
+        <h1> Squats</h1>
+         <a href="https://www.youtube.com/watch?v=YaXPRqUwItQ">Click here to check form</a>
+    </p>
+</div>
+<div class="fifth">
+    <img src="{{ url_for('static',filename='images/lying.jpg')}}" height="75" width="320">
+      <p>
+        <h1>Lying Leg raises</h1>
+         <a href="https://www.youtube.com/watch?v=l4kQd9eWclE">Click here to check form</a>
+    </p>
+</div>
+<div class="sixth">
+    <img src="{{ url_for('static',filename='images/plank.jpg')}}" height="75" width="320">
+      <p>
+        <h1> Plank</h1>
+         <a href="https://www.youtube.com/watch?v=ASdvN_XEl_c">Click here to check form</a>
+    </p>
+</div>
+
+{% endblock%}

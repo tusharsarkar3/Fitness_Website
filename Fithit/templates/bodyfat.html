@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+{% block link%}
+<link rel="stylesheet"  href="{{ url_for('static',filename='styles/style1.css')}}">
+{%endblock%}
+{% block content%}
+    <div id="main">
+        <form action="/bodyfat" method="post" >
+            <input type="text" name="Gender" placeholder="Gender">
+            <input type="number" name="Height" placeholder="Height in cms">
+            <input type="number" name="Waist" placeholder="Waist in cms">
+            <input type="number" name="Neck" placeholder="Neck in cms">
+            <input type="number" name="Hip" placeholder="Hip in cms">
+            <input type="submit" name="Submit">
+        </form>
+
+    {% with message = get_flashed_messages()%}
+    {% if message%}
+        <p>{{message}}</p>
+    {% endif%}
+    {% endwith%}
+    </div>
+    <div>
+        <img src="{{ url_for('static',filename='images/bodyfat.jpg')}}" width="960">
+
+    </div>
+{% endblock%}

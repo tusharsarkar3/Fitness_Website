@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block content%}
+{% block link%}
+<link rel="stylesheet"  href="{{ url_for('static',filename='styles/style1.css')}}">
+{%endblock%}
+ <div id="main">
+        <form action="/ideas" method="post" >
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="idea" placeholder="Write your idea here">
+            <input type="submit" name="Submit">
+        </form>
+  </div>
+  <div>
+        <img src="{{ url_for('static',filename='images/idea.jpg')}}" height="300" width="960">
+
+    </div>
+{% endblock%}

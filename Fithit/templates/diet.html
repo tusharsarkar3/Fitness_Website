@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content%}
+{% block link%}
+<link rel="stylesheet"  href="{{ url_for('static',filename='styles/style1.css')}}">
+{%endblock%}
+    <div id="main">
+        <form action="/diet" method="post">
+            <input type="number" name="Weight" placeholder="Weight in kgs">
+            <input type="submit" name="GET DIET">
+        </form>
+    </div>
+    {% with message = get_flashed_messages()%}
+    {% if message%}
+        <p>{{message}}</p>
+    {% endif%}
+    {% endwith%}
+{% endblock%}

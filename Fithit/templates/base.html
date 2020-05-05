@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FitHit</title>
+    <link rel="stylesheet"  href="{{ url_for('static',filename='styles/style3.css')}}">
+    {% block link%}{%endblock%}
+</head>
+<body>
+    <header>
+        <div class="left">
+            <ul>
+                <li><a href="/bodyfat"> Body Fat</a> </li>
+                <li><a href="/bmi">BMI</a></li>
+            </ul>
+        </div>
+         <div class="right">
+            <ul>
+                <li><a href="/motivation">Motivation</a></li>
+                <li><a href="/ideas">Ideas</a></li>
+            </ul>
+        </div>
+        <div id="middle">
+            <a href="/">
+            <img src="{{ url_for('static',filename='images/FITHIT.png')}}" height="150" width="150">
+            <p><b>FITHIT</b></p>
+            </a>
+        </div>
+    </header>
+    <div id="main">
+        {% block content%}{%endblock%}
+    </div>
+    <footer>
+        <img src="{{ url_for('static',filename='images/tushar.png')}}" height="85" width="85">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/tusharsarkar3">Tushar Sarkar</a></li>
+                <li><a href="tushar.sarkar@somaiya.edu">Email in the link</a></li>
+                <li><a href="https://www.bodybuilding.com/documents/the-ultimate-guide-to-building-muscle.pdf">References</a></li>
+            </ul>
+
+
+        </nav>
+
+    </footer>
+
+</body>
+</html>
